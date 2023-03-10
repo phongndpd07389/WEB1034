@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = ["Tue", "Thu", "Sat", "Nine"];      //Khai báo mảng ban đầu
+        a.splice(3,1);                              //Xóa phần tử "Nine"
+        a.splice(0, 0, "Mon");                      //Thêm phần tử "Mon" vào index 0 
+        a.splice(2, 0, "Wed");                      //Thêm phần tử "Wed" vào index 2
+        a.splice(4, 0, "Fri");
+        a.splice(7, 0 , "Sun");
+        console.log(a);                             //In chuỗi a ra console
+    </script>
+</body>
+</html>
