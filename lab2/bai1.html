@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <script>
+        alert("Giai phuong trinh ax^2 + bx = c");                               //Khai báo tên chương trình
+        var a = prompt("Moi nhap a:");                                          //Nhập chuỗi từ bàn phím
+        var a1 = parseInt(a);                                                   //Chuyển chuỗi vừa nhập thành số
+        var b = prompt("Moi nhap b:");
+        var b1 = parseInt(b);
+        var c = prompt("Moi nhap c:");
+        var c1 = parseInt(c);
+        var c2 = -c1;
+        console.log("a = " + a1);                                               //In ra console các hệ số phương trình
+        console.log("b = " + b1);
+        console.log("c = " + c1);
+        if(a1 == 0){                                                            //Xét hệ số a bằng 0 hoặc khác 0
+            console.log("Phuong trinh co nghiem x = " + c1/b1);
+        }else{
+            var d = b1*b1 - 4*a1*c2;                                            //Tính delta
+            if(d < 0){                                                          //Xét các trường hợp delta
+                console.log("Phuong trinh vo nghiem");
+            }else if(d == 0){
+                console.log("Phuong trinh co nghiem kep x =" + (-b1/(2*a1)));
+            }else{
+                console.log("Phuong trinh co 2 nghiem phan biet");
+                console.log("x1 = " + ((-b1 + Math.sqrt(d))/(2*a1)));
+                console.log("x1 = " + ((-b1 - Math.sqrt(d))/(2*a1)));
+            }
+        }
+    </script>
+</body>
+</html>
