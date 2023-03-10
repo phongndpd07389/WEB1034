@@ -8,9 +8,26 @@
 </head>
 <body>
     <script>
+        alert("Kiem tra 3 canh tam giac");
         var a = prompt("Nhap a");
+        var a1 = parseInt(a);
         var b = prompt("Nhap b");
+        var b1 = parseInt(b);
         var c = prompt("Nhap c");
+        var c1 = parseInt(c);
+        if(a1 < b1 + c1 && b1 < a1 + c1 && c1 < a1 + b1){
+            if( a1*a1 == b1*b1 + c1*c1 || b1*b1 == a1*a1 + c1*c1 || c1*c1 == a1*a1 + b1*b1)
+                console.log("Day la tam giac vuong");
+            else if(a1 == b1 && b1 == c1)
+                console.log("Day la tam giac deu");
+            else if(a1 ==b1 || a1 == c1 || b1 == c1)
+                console.log("Day la tam giac can");
+            else if(a1*a1 > b1*b1 + c1*c1 || b1*b1 > a1*a1 + c1*c1 || c1*c1 > a1*a1 + b1*b1) 
+                console.log("Day la tam giac tu");
+            else
+                console.log("Day la tam giac nhon");
+        }else
+            console.log("Ba canh a, b, c khong phai la ba canh cua mot tam giac");
     </script>
 </body>
 </html>
