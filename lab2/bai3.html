@@ -10,9 +10,23 @@
     <script>
         var name = prompt("Nhap ten");
         var gt = prompt("Nhap gioi tinh");
-        if((str.split(' ').legth - 1) = 1){
-            var firstName = str.substr(0, name.indexOf(' '));
-            var lastName = str.substr(name.indexOf(' ') + 1, name.legth);
+        if((name.split(" ").length - 1) == 1){
+            var firstName = name.substr(0, name.indexOf(" "));
+            var lastName = name.substr((name.indexOf(" ") + 1), name.length);
+            console.log("Ho: " + firstName);
+            console.log(("Ten: " + lastName);
+            if(gt.equalsIgnoreCase("Nam")){
+
+            }else{
+                
+            }
+        }else{
+            var firstName = name.substr(0, name.indexOf(" "));
+            var middleName;
+            var lastName = name.substr((name.indexOf(" ") + 1), name.length);
+            console.log("Ho: " + firstName);
+            console.log("Ten dem: " + middleName);
+            console.log(("Ten rieng: " + lastName);
         }
     </script>
 </body>
