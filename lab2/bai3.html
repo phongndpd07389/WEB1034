@@ -15,18 +15,23 @@
             var lastName = name.substr((name.indexOf(" ") + 1), name.length);
             console.log("Ho: " + firstName);
             console.log("Ten: " + lastName);
-            if(gt.equalsIgnoreCase("Nam")){
-
-            }else{
-
+            if(gt == "Nam"){
+                console.log(firstName + " Van " + lastName);
+            }else if(git == "Nu"){
+                console.log(firstName + " Ve " + lastName);
             }
         }else{
-            var firstName = name.substr(0, name.indexOf(" "));
-            var middleName;
-            var lastName = name.substr((name.indexOf(" ") + 1), name.length);
+            var firstName = name.substring(0, name.indexOf(" "));
+            var middleName = name.substring((name.indexOf(" ") + 1), name.lastIndexOf(" "));
+            var lastName = name.substring((name.lastIndexOf(" ") + 1), name.length);
             console.log("Ho: " + firstName);
             console.log("Ten dem: " + middleName);
             console.log("Ten rieng: " + lastName);
+            if(gt == "Nam"){
+                console.log(firstName + " Van " + lastName);
+            }else if(gt == "Nu"){
+                console.log(firstName + " Ve " + lastName);
+            }
         }
     </script>
 </body>
