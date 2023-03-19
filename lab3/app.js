@@ -22,15 +22,31 @@ while(true){
     var chon = prompt("Nhap lua chon");
     switch(chon){
         case '1':
-            switch((((int)(diemTB*10))-10)/20){
+            switch((((int)(diemTB*10))-30)/10){
                 case 1:
                     console.log("Yeu");
+                    break;
                 case 2:
-                    console.log("Yeu");
+                    console.log("Trung binh");
+                    break;
                 case 3:
-                    console.log("Yeu");
+                    console.log("Trung binh");
+                    break;
                 case 4:
-                    console.log("Yeu");           
+                    console.log("Kha");
+                    break;
+                case 5:
+                    console.log("Kha");
+                    break;
+                case 6:
+                    console.log("Gioi");
+                    break;  
+                case 7:
+                    console.log("Gioi");
+                    break;
+                default:
+                    console.log("Yeu");
+                    break;
             }
             break;
         case '2':
