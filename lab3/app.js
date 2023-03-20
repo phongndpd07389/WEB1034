@@ -27,20 +27,14 @@ while(true){
                     console.log("Yeu");
                     break;
                 case 2:
-                    console.log("Trung binh");
-                    break;
                 case 3:
                     console.log("Trung binh");
                     break;
                 case 4:
-                    console.log("Kha");
-                    break;
                 case 5:
                     console.log("Kha");
                     break;
-                case 6:
-                    console.log("Gioi");
-                    break;  
+                case 6:  
                 case 7:
                     console.log("Gioi");
                     break;
