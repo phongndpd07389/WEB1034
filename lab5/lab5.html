@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <div class="top">
+            <div class="todo"><h1><strong>TODO LIST</strong></h1></div>
+            <div class="task-input">
+                <h2>Ten task</h2>
+                <input id="task-in" type="text" minlength="5">
+            </div>
+            <div class="task-input">
+                <h2>Mo ta</h2>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="summit-todo">
+                <button id="push" type="submit">ADD</button>
+            </div>
+        </div>
+        <div class="bot">
+            <div><h2><strong>Danh sach task</strong></h2></div>
+            <div class="tasks"></div>
+        </div>
+    </div>
+    <script src="app.js"></script> -->
+    <div class="wrapper">
+        <span class="title">TODO LIST</span>
+        <label for="">Task Name:</label>
+        <input type="text" name="task-name" id="task-name" placeholder="Enter task name">
+        <label for="" class="description">Description:</label>
+        <textarea name="task-description" id="task-description" cols="30" rows="10"
+            placeholder="Enter description of the task"></textarea>
+        <div class="buttonrow">
+            <button id="btnAdd" class="btn btn-disabled" disabled="true">Add</button>
+        </div>
+        <h5>Tasks List:</h5>
+        <section id="task-list">
+            <div class="row">
+                <div class="name">Name</div>
+                <div class="des">Description</div>
+                <div class="del">Del</div>
+                <div class="edit">Edit</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

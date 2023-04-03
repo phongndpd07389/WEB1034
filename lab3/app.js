@@ -22,7 +22,7 @@ while(true){
     var chon = prompt("Nhap lua chon");
     switch(chon){
         case '1':
-            switch((((int)(diemTB*10))-30)/10){
+            switch(((int((diemTB*10)))-30)/10){
                 case 1:
                     console.log("Yeu");
                     break;

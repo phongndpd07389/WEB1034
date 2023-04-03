@@ -35,4 +35,5 @@ let studenList = [
     s4 = new Student(4, 'Thai', 'Dinh', '18301', 'hihi@gmail.com', 116, '04-04-2000'),
     s5 = new Student(5, 'Sim', 'Ple', '18301', 'hihi@gmail.com', 117, '05-05-2000'),
 ]
-studenList.sort(getAgeInDays(a, b))
+studenList.sort(getAgeInDays(a, b));
+console.log(`Kích thước màn hình: ${window.innerWidth} x ${window.innerHeight}`);

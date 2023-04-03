@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div id="logo">
+                    <a href="#" class="logo-wrapper" title="Badminton">
+                        <img src="../img/logo.jpg" alt="Badminton">
+                    </a>
+                </div>
+                <div class="content-nav">
+                    <ul>
+                        <li><a href="#nav1">About us</a></li>
+                        <li><a href="#">Offer</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Search...">
+                        <button class="btn1">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                </div>
+                <button id="cart">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    Giỏ Hàng
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+    
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="bodywrap">
+            <section id="nav1" class=" slider_section position-relative">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="slider_item-box">
+                        <div class="slider_item-container">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="slider_img-box">
+                                  <div>
+                                    <img src="../img/test1.jpg" alt="" class="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="slider_item-detail">
+                                  <div>
+                                    <h1>
+                                      Stylish watches
+                                    </h1>
+                                    <p>
+                                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                                    </p>
+                                    <div class="d-flex">
+                                      <a href="" class="slider-btn1 mr-3">
+                                        Read More
+                                      </a>
+                                      <a href="" class="slider-btn2">
+                                        Contact Us
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="slider_item-box">
+                        <div class="slider_item-container">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="slider_img-box">
+                                  <div>
+                                    <img src="../img/test2.jpg" alt="" class="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="slider_item-detail">
+                                  <div>
+                                    <h1>
+                                      Stylish watches
+                                    </h1>
+                                    <p>
+                                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                                    </p>
+                                    <div class="d-flex">
+                                      <a href="" class="slider-btn1 mr-3">
+                                        Read More
+                                      </a>
+                                      <a href="" class="slider-btn2">
+                                        Contact Us
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="slider_item-box">
+                        <div class="slider_item-container">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="slider_img-box">
+                                  <div>
+                                    <img src="../img/test3.jpg" alt="" class="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="slider_item-detail">
+                                  <div>
+                                    <h1 class="">
+                                      Stylish watches
+                                    </h1>
+                                    <p>
+                                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                                    </p>
+                                    <div class="d-flex">
+                                      <a href="" class="slider-btn1 mr-3">
+                                        Read More
+                                      </a>
+                                      <a href="" class="slider-btn2">
+                                        Contact Us
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom_carousel-control">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row promo-box">
+                    
+                    
+                    
+                    
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="promo-item">
+                            <div class="icon">
+                                <img width="50" height="50" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="/templates/images/policy_image_2.svg" alt="Vận chuyển toàn quốc"/>
+                            </div>
+                            <div class="info">
+                                Vận chuyển <span>TOÀN QUỐC</span> <br> Thanh toán khi nhận hàng
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    
+                    
+                    
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="promo-item">
+                            <div class="icon">
+                                <img width="50" height="50" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="/templates/images/policy_image_1.svg" alt=""/>
+                            </div>
+                            <div class="info">
+                                <span>Bảo đảm chất lượng</span> <br>Sản phẩm bảo đảm chất lượng.
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    
+                    
+                    
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="promo-item">
+                            <div class="icon">
+                                <img width="50" height="50" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="/templates/images/thanh_toan.svg" alt=""/>
+                            </div>
+                            <div class="info">
+                                Tiến hành <span>THANH TOÁN</span> <br> Với nhiều <span>PHƯƠNG THỨC</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    
+                    
+                    
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="promo-item">
+                            <div class="icon">
+                                <img width="50" height="50" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="/templates/images/doi_san_pham.svg" alt=""/>
+                            </div>
+                            <div class="info">
+                                <span>Đổi sản phẩm mới</span><br> nếu sản phẩm lỗi
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
