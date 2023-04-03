@@ -133,4 +133,3 @@ function addRow() {
         });
     }
 }
-console.log("a");
