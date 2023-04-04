@@ -1,0 +1,50 @@
+#bin {
+    height: 250px;
+    width: 166px;
+    background-color: blue;
+    float: left;
+    border: 5px solid #000;
+    position: relative;
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    width: 150px;
+    border: 3px dashed #999;
+    background: #eee;
+    padding: 10px;
+    display: block;
+}
+
+ul {
+    margin-left: 200px;
+    min-height: 300px;
+}
+
+li.over {
+    border-color: #333;
+    background: #ccc;
+}
+
+*{
+    background-color: aquamarine;
+}
+
+*[draggable=true] {
+    /* -moz-user-select:none;
+    -khtml-user-drag: element; */
+    cursor: move;
+}
+/* 
+*:-khtml-drag {
+    background-color: rgba(238,238,238, 0.5);
+} */
+  
+  
