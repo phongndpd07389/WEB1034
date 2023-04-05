@@ -1,6 +1,8 @@
 function drop(ev){
     ev.preventDefault();
-    document.querySelector("#...").remove();
+    let data = ev.dataTransfer.getData("text");
+    let el = document.getElementById(data);
+    el.parentNode.removeChild(el);
 }
 
 function allowDrop(ev) {
