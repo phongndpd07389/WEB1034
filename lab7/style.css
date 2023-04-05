@@ -12,7 +12,7 @@ li {
     list-style: none;
 }
 
-li a {
+li {
     text-decoration: none;
     color: #000;
     margin: 10px;

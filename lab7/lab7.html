@@ -9,13 +9,15 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <div id="bin" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div id="bin" ondragover="allowDrop(event)" ondrop="drop(event)" style="text-align: center; justify-content: center;">
+        Drop item here!!!
+    </div>
     <ul>
-        <li ondragstart="drag(event)"><a href="#" id="one" draggable="true">one</a></li>
-        <li ondragstart="drag(event)"><a href="#" id="two" draggable="true">two</a></li>
-        <li ondragstart="drag(event)"><a href="#" id="three" draggable="true">three</a></li>
-        <li ondragstart="drag(event)"><a href="#" id="four" draggable="true">four</a></li>
-        <li ondragstart="drag(event)"><a href="#" id="five" draggable="true">five</a></li>
+        <li id="one" draggable="true" ondragstart="drag(event)">one</li>
+        <li id="two" draggable="true" ondragstart="drag(event)">two</li>
+        <li id="three" draggable="true" ondragstart="drag(event)">three</li>
+        <li id="four" draggable="true" ondragstart="drag(event)">four</li>
+        <li id="five" draggable="true" ondragstart="drag(event)">five</li>
     </ul>
 </body>
 </html>
