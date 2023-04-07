@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="vid">
+            <video id="video" width="500px" height="500px">
+                <source src="#" type="video/mp4">
+            </video>
+        </div>
+        <div class="btn">
+            <button onclick="play()"><i class="fa fa-play"></i></button>
+            <button onclick="pause()"><i class="fa fa-pause"></i></button>
+            <button onclick="stop()"><i class="fa-sharp fa fa-stop"></i></button>
+            <button onclick="volI()">Vol +</button>
+            <button onclick="volD()">Vol -</button>
+            <Button id="loopbtn">Disable Loop</Button>
+            <button onclick="checkLoop()">Check loop status</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
