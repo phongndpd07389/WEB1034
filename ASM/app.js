@@ -59,3 +59,46 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 //end slider section js
+
+//countdown clock
+(function timer() {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+  var countDown = new Date("May 20, 2023 15:37:25").getTime(),
+      x = setInterval(function() {    
+
+        var now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day));
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "Đã hết thời gian khuyến mãi!";
+          document.getElementById("countdown").style.display = "none";
+          clearInterval(x);
+        }
+      }, 1000)
+}());
+//end countdown clock
+
+// geolocation API
+var x = document.getElementById("address");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+//end geolocation API
